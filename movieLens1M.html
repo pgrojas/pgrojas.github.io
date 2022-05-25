@@ -30,8 +30,8 @@
             Rankings
            </a>
            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-             <li><a class="dropdown-item" href="movieLens100k.html">MovieLens100K</a></li>
-             <li><a class="dropdown-item active"  aria-current="true" href="#">MovieLens1M</a></li>
+             <li><a class="dropdown-item active" href="movieLens100k.html">MovieLens100K</a></li>
+             <li><a class="dropdown-item" aria-current="true" href="#" >MovieLens1M</a></li>
              <li><a class="dropdown-item" href="netflixPrize.html">NetflixPrize</a></li>
            </ul>
        
@@ -54,7 +54,8 @@
       </div>
       <div id="collapse1" class="collapse close">
         <div class="card-body">
-          <table id ="table" data-toggle="table" data-url="json/movieLens100k/dataMF.json"> 
+          <h3 style="color: black; margin-top: 50px; margin-bottom: 50px;">Métricas de calidad para predicciones </h3>
+          <table id ="table" data-toggle="table" data-url="https://pgrojas.github.io/json/movieLens1M/dataMF.json"> 
             <thead>
                 <tr>
                     <th data-field="name">name</th>
@@ -66,6 +67,21 @@
                     <th data-field="parametros">Hyper-parameters</th>
                 </tr>
             </thead>
+          </table>
+          <h3 style="color: black; margin-top: 50px; margin-bottom: 50px;">Métricas de calidad para recomendaciones </h3>
+          <table class="table" data-toggle="table" data-url="https://pgrojas.github.io/json/movieLens1M/dataMF.json" >
+            <thead>
+              <tr>
+                <th data-field="name">name</th>
+                <th data-field="Discovery" data-sortable="true">DiscoveryScore</th>
+                <th data-field="Diversity" data-sortable="true">DiversityScore</th>
+                <th data-field="F1" data-sortable="true">F1Score</th>
+                <th data-field="NDCG" data-sortable="true">NDCGScore</th>
+                <th data-field="Novelty" data-sortable="true">NoveltyScore</th>
+                <th data-field="Precision" data-sortable="true">PrecisionScore</th>
+                <th data-field="Recall" data-sortable="true">RecallScore</th>
+              </tr>
+          </thead>
           </table>
         </div>
       </div>
@@ -80,7 +96,8 @@
         </div>
         <div id="collapse2" class="collapse close">
           <div class="card-body">
-            <table class="table" data-toggle="table" data-url="json/movieLens100k/dataUserKNN.json">
+            <h3 style="color: black; margin-top: 50px; margin-bottom: 50px;">Métricas de calidad para predicciones </h3>
+            <table class="table" data-toggle="table" data-url="https://pgrojas.github.io/json/movieLens1M/dataUserKNN.json">
               <thead>
                   <tr>
                     <th data-field="name">name</th>
@@ -92,6 +109,21 @@
                     <th data-field="parametros">Hyper-parameters</th>
                   </tr>
               </thead>
+            </table>
+            <h3 style="color: black; margin-top: 50px; margin-bottom: 50px;">Métricas de calidad para recomendaciones </h3>
+            <table class="table" data-toggle="table" data-url="https://pgrojas.github.io/json/movieLens1M/dataUserKNN.json" >
+              <thead>
+                <tr>
+                  <th data-field="name">name</th>
+                  <th data-field="Discovery" data-sortable="true">DiscoveryScore</th>
+                  <th data-field="Diversity" data-sortable="true">DiversityScore</th>
+                  <th data-field="F1" data-sortable="true">F1Score</th>
+                  <th data-field="NDCG" data-sortable="true">NDCGScore</th>
+                  <th data-field="Novelty" data-sortable="true">NoveltyScore</th>
+                  <th data-field="Precision" data-sortable="true">PrecisionScore</th>
+                  <th data-field="Recall" data-sortable="true">RecallScore</th>
+                </tr>
+            </thead>
             </table>
           </div>
         </div>
@@ -108,7 +140,8 @@
         </div>
         <div id="collapse3" class="collapse close" >
           <div class="card-body">
-            <table class="table" data-toggle="table" data-url="json/movieLens100k/dataItemKNN.json">
+            <h3 style="color: black; margin-top: 50px; margin-bottom: 50px;">Métricas de calidad para predicciones </h3>
+            <table class="table" data-toggle="table" data-url="https://pgrojas.github.io/json/movieLens1M/dataItemKNN.json">
               <thead>
                   <tr>
                     <th data-field="name">name</th>
@@ -120,6 +153,21 @@
                     <th data-field="parametros">Hyper-parameters</th>
                   </tr>
               </thead>
+            </table>
+            <h3 style="color: black; margin-top: 50px; margin-bottom: 50px;">Métricas de calidad para recomendaciones </h3>
+            <table class="table" data-toggle="table" data-url="https://pgrojas.github.io/json/movieLens1M/dataItemKNN.json" >
+              <thead>
+                <tr>
+                  <th data-field="name">name</th>
+                  <th data-field="Discovery" data-sortable="true">DiscoveryScore</th>
+                  <th data-field="Diversity" data-sortable="true">DiversityScore</th>
+                  <th data-field="F1" data-sortable="true">F1Score</th>
+                  <th data-field="NDCG" data-sortable="true">NDCGScore</th>
+                  <th data-field="Novelty" data-sortable="true">NoveltyScore</th>
+                  <th data-field="Precision" data-sortable="true">PrecisionScore</th>
+                  <th data-field="Recall" data-sortable="true">RecallScore</th>
+                </tr>
+            </thead>
             </table>
           </div>
         </div>
@@ -134,7 +182,8 @@
         </div>
         <div id="collapse4" class="collapse close">
           <div class="card-body">
-            <table class="table" data-toggle="table"  data-url="json/movieLens100k/dataMovieLens100K.json">
+            <h3 style="color: black; margin-top: 50px; margin-bottom: 50px;">Métricas de calidad para predicciones </h3>
+            <table class="table" data-toggle="table"  data-url="https://pgrojas.github.io/json/movieLens100K/dataMovieLens1M.json">
               <thead>
                   <tr>
                     <th data-field="name">name</th>
@@ -146,6 +195,21 @@
                     <th data-field="parametros">Hyper-parameters</th>
                   </tr>
               </thead>
+            </table>
+            <h3 style="color: black; margin-top: 50px; margin-bottom: 50px;">Métricas de calidad para recomendaciones </h3>
+            <table class="table" data-toggle="table" data-url="https://pgrojas.github.io/json/movieLens100K/dataMovieLens1M.json" >
+              <thead>
+                <tr>
+                  <th data-field="name">name</th>
+                  <th data-field="Discovery" data-sortable="true">DiscoveryScore</th>
+                  <th data-field="Diversity" data-sortable="true">DiversityScore</th>
+                  <th data-field="F1" data-sortable="true">F1Score</th>
+                  <th data-field="NDCG" data-sortable="true">NDCGScore</th>
+                  <th data-field="Novelty" data-sortable="true">NoveltyScore</th>
+                  <th data-field="Precision" data-sortable="true">PrecisionScore</th>
+                  <th data-field="Recall" data-sortable="true">RecallScore</th>
+                </tr>
+            </thead>
             </table>
           </div>
         </div>
