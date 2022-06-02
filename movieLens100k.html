@@ -30,9 +30,9 @@
             Rankings
            </a>
            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-             <li><a class="dropdown-item active" aria-current="true" href="movieLens100k.html">MovieLens100K</a></li>
+             <li><a class="dropdown-item active" aria-current="true" href="#">MovieLens100K</a></li>
              <li><a class="dropdown-item" href="movieLens1M.html">MovieLens1M</a></li>
-             <li><a class="dropdown-item" href="#">Something else here</a></li>
+             <li><a class="dropdown-item" href="netflixPrize.html"></a></li>
            </ul>
        
         </nav>
@@ -63,24 +63,26 @@
                     <th data-field="mae" data-sortable="true">MAEScore</th>
                     <th data-field="rmse" data-sortable="true">RMSEScore</th>
                     <th data-field="max" data-sortable="true">MAXScore</th>
-                    <th data-field="perfect" data-sortable="true">PerfectScore</th>
-                    <th data-field="Puntuación" data-sortable="true">Puntuación</th>
+                    <th data-field="perfect" data-sortable="true"><a data-toggle="tooltip" data-placement="right" title=" umbral = 0.1">PerfectScore</a></th>
+                    <th data-field="Puntuación" data-sortable="true"><a data-toggle="tooltip" data-placement="right" title="MSE+RMSE+MAX+MAE-PERFECT">Puntuación</a></th>
                     <th data-field="parametros">Hyper-parameters</th>
                 </tr>
             </thead>
           </table>
           <h3 style="color: black; margin-top: 50px; margin-bottom: 50px;">Métricas de calidad para recomendaciones </h3>
+          <p style="color: black; margin-bottom: 50px;">Número de recomendaciones = 10</p>
           <table class="table" data-toggle="table" data-url="https://pgrojas.github.io/json/movieLens100K/dataMF.json" >
             <thead>
               <tr>
                 <th data-field="name">name</th>
                 <th data-field="Discovery" data-sortable="true">DiscoveryScore</th>
                 <th data-field="Diversity" data-sortable="true">DiversityScore</th>
-                <th data-field="F1" data-sortable="true">F1Score</th>
+                <th data-field="F1" data-sortable="true"><a data-toggle="tooltip" data-placement="right" title=" umbral relevante = 4">F1Score</a></th>
                 <th data-field="NDCG" data-sortable="true">NDCGScore</th>
                 <th data-field="Novelty" data-sortable="true">NoveltyScore</th>
-                <th data-field="Precision" data-sortable="true">PrecisionScore</th>
-                <th data-field="Recall" data-sortable="true">RecallScore</th>
+                <th data-field="Precision" data-sortable="true"><a data-toggle="tooltip" data-placement="right" title=" umbral relevante = 4">PrecisionScore</a></th>
+                <th data-field="Recall" data-sortable="true"><a data-toggle="tooltip" data-placement="right" title=" umbral relevante = 4">RecallScore</a></th>
+                <th data-field="parametros">Hyper-parameters</th>
               </tr>
           </thead>
           </table>
@@ -106,24 +108,26 @@
                     <th data-field="mae" data-sortable="true">MAEScore</th>
                     <th data-field="rmse" data-sortable="true">RMSEScore</th>
                     <th data-field="max" data-sortable="true">MAXScore</th>
-                    <th data-field="perfect" data-sortable="true">PerfectScore</th>
-                    <th data-field="Puntuación" data-sortable="true">Puntuación</th>
+                    <th data-field="perfect" data-sortable="true"><a data-toggle="tooltip" data-placement="right" title=" umbral = 0.1">PerfectScore</a></th>
+                    <th data-field="Puntuación" data-sortable="true"><a data-toggle="tooltip" data-placement="right" title="MSE+RMSE+MAX+MAE-PERFECT">Puntuación</a></th>
                     <th data-field="parametros">Hyper-parameters</th>
                   </tr>
               </thead>
             </table>
             <h3 style="color: black; margin-top: 50px; margin-bottom: 50px;">Métricas de calidad para recomendaciones </h3>
+            <p style="color: black; margin-bottom: 50px;">Número de recomendaciones = 10</p>
             <table class="table" data-toggle="table" data-url="https://pgrojas.github.io/json/movieLens100K/dataUserKNN.json" >
               <thead>
                 <tr>
                   <th data-field="name">name</th>
                   <th data-field="Discovery" data-sortable="true">DiscoveryScore</th>
                   <th data-field="Diversity" data-sortable="true">DiversityScore</th>
-                  <th data-field="F1" data-sortable="true">F1Score</th>
+                  <th data-field="F1" data-sortable="true"><a data-toggle="tooltip" data-placement="right" title=" umbral relevante = 4">F1Score</a></th>
                   <th data-field="NDCG" data-sortable="true">NDCGScore</th>
                   <th data-field="Novelty" data-sortable="true">NoveltyScore</th>
-                  <th data-field="Precision" data-sortable="true">PrecisionScore</th>
-                  <th data-field="Recall" data-sortable="true">RecallScore</th>
+                  <th data-field="Precision" data-sortable="true"><a data-toggle="tooltip" data-placement="right" title=" umbral relevante = 4">PrecisionScore</a></th>
+                  <th data-field="Recall" data-sortable="true"><a data-toggle="tooltip" data-placement="right" title=" umbral relevante = 4">RecallScore</a></th>
+                  <th data-field="parametros">Hyper-parameters</th>
                 </tr>
             </thead>
             </table>
@@ -151,24 +155,27 @@
                     <th data-field="mae" data-sortable="true">MAEScore</th>
                     <th data-field="rmse" data-sortable="true">RMSEScore</th>
                     <th data-field="max" data-sortable="true">MAXScore</th>
-                    <th data-field="perfect" data-sortable="true">PerfectScore</th>
-                    <th data-field="Puntuación" data-sortable="true">Puntuación</th>
+                    <th data-field="perfect" data-sortable="true"><a data-toggle="tooltip" data-placement="right" title=" umbral = 0.1">PerfectScore</a></th>
+                    <th data-field="Puntuación" data-sortable="true"><a data-toggle="tooltip" data-placement="right" title="MSE+RMSE+MAX+MAE-PERFECT">Puntuación</a></th>
                     <th data-field="parametros">Hyper-parameters</th>
+                    
                   </tr>
               </thead>
             </table>
             <h3 style="color: black; margin-top: 50px; margin-bottom: 50px;">Métricas de calidad para recomendaciones </h3>
+            <p style="color: black; margin-bottom: 50px;">Número de recomendaciones = 10</p>
             <table class="table" data-toggle="table" data-url="https://pgrojas.github.io/json/movieLens100K/dataItemKNN.json" >
               <thead>
                 <tr>
                   <th data-field="name">name</th>
                   <th data-field="Discovery" data-sortable="true">DiscoveryScore</th>
                   <th data-field="Diversity" data-sortable="true">DiversityScore</th>
-                  <th data-field="F1" data-sortable="true">F1Score</th>
+                  <th data-field="F1" data-sortable="true"><a data-toggle="tooltip" data-placement="right" title=" umbral relevante = 4">F1Score</a></th>
                   <th data-field="NDCG" data-sortable="true">NDCGScore</th>
                   <th data-field="Novelty" data-sortable="true">NoveltyScore</th>
-                  <th data-field="Precision" data-sortable="true">PrecisionScore</th>
-                  <th data-field="Recall" data-sortable="true">RecallScore</th>
+                  <th data-field="Precision" data-sortable="true"><a data-toggle="tooltip" data-placement="right" title=" umbral relevante = 4">PrecisionScore</a></th>
+                  <th data-field="Recall" data-sortable="true"><a data-toggle="tooltip" data-placement="right" title=" umbral relevante = 4">RecallScore</a></th>
+                  <th data-field="parametros">Hyper-parameters</th>
                 </tr>
             </thead>
             </table>
@@ -194,24 +201,26 @@
                     <th data-field="mae" data-sortable="true">MAEScore</th>
                     <th data-field="rmse" data-sortable="true">RMSEScore</th>
                     <th data-field="max" data-sortable="true">MAXScore</th>
-                    <th data-field="perfect" data-sortable="true">PerfectScore</th>
-                    <th data-field="Puntuación" data-sortable="true">Puntuación</th>
+                    <th data-field="perfect" data-sortable="true"><a data-toggle="tooltip" data-placement="right" title=" umbral = 0.1">PerfectScore</a></th>
+                    <th data-field="Puntuación" data-sortable="true"><a data-toggle="tooltip" data-placement="right" title="MSE+RMSE+MAX+MAE-PERFECT">Puntuación</a></th>
                     <th data-field="parametros">Hyper-parameters</th>
                   </tr>
               </thead>
             </table>
             <h3 style="color: black; margin-top: 50px; margin-bottom: 50px;">Métricas de calidad para recomendaciones </h3>
+            <p style="color: black; margin-bottom: 50px;">Número de recomendaciones = 10</p>
             <table class="table" data-toggle="table"  data-search = "True" data-url="https://pgrojas.github.io/json/movieLens100K/dataMovieLens100K.json" >
               <thead>
                 <tr>
                   <th data-field="name">name</th>
                   <th data-field="Discovery" data-sortable="true">DiscoveryScore</th>
                   <th data-field="Diversity" data-sortable="true">DiversityScore</th>
-                  <th data-field="F1" data-sortable="true">F1Score</th>
+                  <th data-field="F1" data-sortable="true"><a data-toggle="tooltip" data-placement="right" title=" umbral relevante = 4">F1Score</a></th>
                   <th data-field="NDCG" data-sortable="true">NDCGScore</th>
                   <th data-field="Novelty" data-sortable="true">NoveltyScore</th>
-                  <th data-field="Precision" data-sortable="true">PrecisionScore</th>
-                  <th data-field="Recall" data-sortable="true">RecallScore</th>
+                  <th data-field="Precision" data-sortable="true"><a data-toggle="tooltip" data-placement="right" title=" umbral relevante = 4">PrecisionScore</a></th>
+                  <th data-field="Recall" data-sortable="true"><a data-toggle="tooltip" data-placement="right" title=" umbral relevante = 4">RecallScore</a></th>
+                  <th data-field="parametros">Hyper-parameters</th>
                 </tr>
             </thead>
             </table>
